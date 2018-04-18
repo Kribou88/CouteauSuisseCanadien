@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CouteauSuisseCanadien.Views.ConversionPage">
+    <ContentPage.Content>
+        <Grid Margin="10,0" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="150"/>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Picker x:Name="pickerMesure"
+                    Title="Type de conversion" 
+                    Grid.Column="0" 
+                    Grid.Row="1"
+                    Grid.ColumnSpan="3"
+                    TextColor="{StaticResource texteColor}"
+                    VerticalOptions="Center"
+                    Margin="80,0" 
+                    SelectedIndexChanged="pickerMesure_SelectedIndexChanged"
+                    ItemDisplayBinding="{Binding IntitulePiker}">
+            </Picker>
+
+            <Entry x:Name="entryValue"
+                   Grid.Column="0" 
+                   Grid.Row="2"
+                   BackgroundColor="White"
+                   HeightRequest="50"
+                   VerticalOptions="Center"
+                   TextChanged="ChangeValue"
+                   Keyboard="Numeric"
+                   />
+            <Image Source="double_Fleche.png" Grid.Column="1" Grid.Row="2"/>
+            <Label x:Name="labelValue"
+                   BackgroundColor="White"
+                   Grid.Column="2"
+                   Grid.Row="2"
+                   HeightRequest="50"
+                   VerticalOptions="Center"
+                   />
+            <Label x:Name="labelUnite1"
+                   Grid.Column="0"
+                   Grid.Row="3"
+                   HeightRequest="50"
+                   VerticalOptions="Center"
+                   />
+            <Label x:Name="labelUnite2"
+                   Grid.Column="2"
+                   Grid.Row="3"
+                   HeightRequest="50"
+                   VerticalOptions="Center"
+                   />
+
+
+            <Label Text="Conversion"
+                   FontSize="50"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="3"
+                   Grid.Row="0"
+                   TextColor="{StaticResource titleColor}"
+                   />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
