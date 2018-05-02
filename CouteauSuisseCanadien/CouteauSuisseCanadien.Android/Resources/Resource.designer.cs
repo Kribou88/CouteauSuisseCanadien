@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("CouteauSuisseCanadien.Droid.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("CouteauSuisseCanadien.Resource", IsApplication=true)]
 
-namespace CouteauSuisseCanadien.Droid
+namespace CouteauSuisseCanadien
 {
 	
 	
@@ -26,7 +26,7 @@ namespace CouteauSuisseCanadien.Droid
 		
 		public static void UpdateIdValues()
 		{
-			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::CouteauSuisseCanadien.Droid.Resource.Attribute.actionBarSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::CouteauSuisseCanadien.Resource.Attribute.actionBarSize;
 		}
 		
 		public partial class Animation

@@ -39,7 +39,17 @@
                    FontSize="30"
                    HorizontalTextAlignment="Center"
                    />
-            <Image Source="double_Fleche.png" Grid.Column="1" Grid.Row="2"/>
+            <Image Source="double_Fleche.png" 
+                   Grid.Column="1" 
+                   Grid.Row="2">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                    Tapped="OnImageTap"
+                       NumberOfTapsRequired="1"
+                        />
+                </Image.GestureRecognizers>
+            </Image>
+                   
             <Label x:Name="labelValue"
                    BackgroundColor="White"
                    Grid.Column="2"
