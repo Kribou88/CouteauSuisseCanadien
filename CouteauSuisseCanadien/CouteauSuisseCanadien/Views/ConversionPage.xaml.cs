@@ -53,7 +53,7 @@ namespace CouteauSuisseCanadien.Views
                 double valeur = double.Parse(entryValue.Text);
                 double valeurConvertie = valeur * valeur2 / valeur1;
 
-                labelValue.Text = valeurConvertie.ToString();
+                labelValue.Text = valeurConvertie.ToString("#.#");
             }
             catch
             {

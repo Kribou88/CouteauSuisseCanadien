@@ -36,6 +36,8 @@
                    VerticalOptions="Center"
                    TextChanged="ChangeValue"
                    Keyboard="Numeric"
+                   FontSize="30"
+                   HorizontalTextAlignment="Center"
                    />
             <Image Source="double_Fleche.png" Grid.Column="1" Grid.Row="2"/>
             <Label x:Name="labelValue"
@@ -44,6 +46,9 @@
                    Grid.Row="2"
                    HeightRequest="50"
                    VerticalOptions="Center"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   FontSize="30"
                    />
             <Label x:Name="labelUnite1"
                    Grid.Column="0"
